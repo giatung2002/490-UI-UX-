@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Privacy Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for toggle switches */
+        .toggle-switch {
+            cursor: pointer;
+            width: 34px;
+            height: 20px;
+            background-color: #ccc;
+            position: relative;
+            border-radius: 999px;
+            transition: background-color 0.3s;
+        }
+        .toggle-switch:before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .toggle-switch.active {
+            background-color: #4CAF50;
+        }
+        .toggle-switch.active:before {
+            transform: translateX(14px);
+        }
+        /* Enhancing navigation styles */
+        nav ul {
+            list-style-type: none; /* Removes default list styling */
+            padding: 0; /* Removes default padding */
+        }
+        nav ul li a {
+            text-decoration: none; /* Removes underline from links */
+            color: black; /* Sets text color */
+            padding: 8px 16px; /* Adds padding for touch targets */
+            display: block; /* Makes the entire area clickable */
+            border-radius: 4px; /* Adds rounded corners */
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: #efefef; /* Adds a background color on hover/focus */
+            color: #0056b3; /* Changes text color on hover/focus */
+        }
+        nav ul li a.active {
+            background-color: #007bff; /* Adds a background color for the active link */
+            color: white; /* Changes text color for the active link */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="post.html">Create Post</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-8">
+        <!-- Main content goes here -->
+        <div class="bg-white p-6 rounded shadow-lg">
+            <h1 class="text-xl font-semibold mb-4">Security & Privacy</h1>
+            <div class="bg-white p-6 rounded shadow-lg">
+                <h1 class="text-xl font-semibold mb-4">Security & Privacy</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Security: Password Change -->
+                    <div>
+                        <h2 class="font-bold text-lg">Security</h2>
+                        <form action="#" method="POST">
+                            <div class="mb-4">
+                                <label for="currentPassword" class="block mb-2">Current Password</label>
+                                <input type="password" id="currentPassword" name="currentPassword" class="border rounded w-full p-2" placeholder="Current Password" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="newPassword" class="block mb-2">New Password</label>
+                                <input type="password" id="newPassword" name="newPassword" class="border rounded w-full p-2" placeholder="New Password" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="confirmPassword" class="block mb-2">Confirm New Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" class="border rounded w-full p-2" placeholder="Confirm New Password" required>
+                            </div>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Change Password</button>
+                        </form>
+                    </div>
+                    <!-- Privacy: Profile and Post Visibility -->
+                    <div>
+                        <h2 class="font-bold text-lg">Privacy</h2>
+                        <div class="mb-4">
+                            <label class="block mb-2">Profile Visibility</label>
+                            <div class="flex items-center gap-4">
+                                <span class="toggle-switch" onclick="toggleSwitch(this)"></span> Public
+                                <span class="toggle-switch" onclick="toggleSwitch(this)"></span> Connections Only
+                                <span class="toggle-switch" onclick="toggleSwitch(this)"></span> Private
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2">Post Visibility</label>
+                            <div class="flex items-center gap-4">
+                                <span class="toggle-switch" onclick="toggleSwitch(this)"></span> Public
+                                <span class="toggle-switch" onclick="toggleSwitch(this)"></span> Connections Only
+                                <span class="toggle-switch" onclick="toggleSwitch(this)"></span> Private
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

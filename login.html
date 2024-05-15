@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with MetaMask</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl">Decentralized Social</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="post.html">Create Post</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <style>
+        .button-hover:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-white text-black font-sans leading-normal tracking-normal">
+    <div class="flex items-center justify-center h-screen">
+        <div class="text-center">
+            <h1 class="text-2xl font-bold mb-4">Login to Decentralized Social Network</h1>
+            <p class="mb-4">Connect your MetaMask wallet to access your decentralized profile.</p>
+            <button onclick="loginWithMetaMask()" class="px-8 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+                Login with MetaMask
+            </button>
+            <div class="mt-8">
+                <h2 class="text-lg font-semibold">How to Connect with MetaMask</h2>
+                <ul class="text-left list-disc list-inside">
+                    <li>Install the MetaMask browser extension</li>
+                    <li>Create or import your MetaMask wallet</li>
+                    <li>Click the "Login with MetaMask" button</li>
+                    <li>Follow the MetaMask prompts to connect your wallet</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function loginWithMetaMask() {
+            console.log("MetaMask login attempted.");
+            alert("MetaMask connection simulated. In production, connect to the wallet.");
+        }
+    </script>
+</body>
+</html>

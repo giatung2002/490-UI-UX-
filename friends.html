@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl">Decentralized Social</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="post.html">Create Post</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-4">Friends</h1>
+        <div class="flex justify-end mb-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Friend</button>
+        </div>
+        <ul class="divide-y divide-gray-300">
+            <li class="flex items-center justify-between py-3">
+                <div class="flex items-center">
+                    <img src="https://via.placeholder.com/40" alt="User 1" class="rounded-full mr-4">
+                    <span>User 1 - Online</span>
+                </div>
+                <div class="flex">
+                    <button class="text-gray-500 hover:text-gray-700 mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25V9m10.5 0v9.75a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V9m11.25 0H6m3 0V5.25M15 9V5.25" />
+                        </svg>  
+                    </button>
+                    <button class="text-red-500 hover:text-red-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>

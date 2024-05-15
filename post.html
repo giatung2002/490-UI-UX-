@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl">Decentralized Social</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="friends.html">Friends</a></li>
+                    <li><a href="post.html">Create Post</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto text-center p-20">
+        <div class="bg-gray-800 p-8 rounded-md">
+            <h1 class="text-3xl font-bold mb-4">Create a Post</h1>
+            <textarea class="border border-gray-700 bg-gray-900 text-white w-full p-2 rounded-md" rows="4" placeholder="What's on your mind?"></textarea>
+            <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4 3a1 1 0 011-1h10a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V3zm2 1v12h8V4H6z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 3a1 1 0 01.993.883L11 4v6h3a1 1 0 01.117 1.993L14 12h-3v3a1 1 0 01-1.993.117L9 15v-3H6a1 1 0 01-.117-1.993L6 10h3V4a1 1 0 011-1z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Post</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
